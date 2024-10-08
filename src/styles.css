@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Utilize uma fonte moderna */
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -9,14 +9,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(135deg, #02493e, #1d7965);
+    background-image: 
+        linear-gradient(rgba(0, 128, 0, 0.5), rgba(0, 128, 0, 0.5)), 
+        url('../public/map.jpg'); 
+    background-size: cover; 
+    background-position: center; 
 }
 
 .title {
     font-size: 85px;
     color: white;
     animation: animationTitle 2s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 } 
 
 @keyframes animationTitle {
@@ -28,51 +32,51 @@ body {
 }
 
 .containerInput {
-    background-color: rgba(255, 255, 255, 0.9); /* Mais opaco para melhor contraste */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
-    margin: 20px 0; /* Diminui a margem */
+    margin: 20px 0;
     display: flex;
-    border-radius: 25px; /* Bordas mais arredondadas */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .containerInput input {
     background-color: transparent;
-    border: 2px solid #1d7965; /* Adiciona uma borda */
+    border: 2px solid #1d7965;
     font-size: 20px;
-    color: #333; /* Muda a cor do texto */
+    color: #333;
     outline: none;
     margin-right: 8px;
-    padding: 10px 15px; /* Mais padding para conforto */
-    border-radius: 20px; /* Bordas arredondadas */
-    transition: border 0.3s; /* Transição suave na borda */
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: border 0.3s;
 }
 
 .containerInput input::placeholder {
-    color: #aaa; /* Cor do placeholder mais suave */
+    color: #aaa;
 }
 
 .containerInput input:focus {
-    border-color: #02493e; /* Muda a cor da borda ao focar */
+    border-color: #02493e;
 }
 
 .buttonSearch {
-    background-color: #1d7965; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
+    background-color: #1d7965;
+    color: white;
     border: none;
-    border-radius: 20px; /* Bordas arredondadas */
-    padding: 10px 15px; /* Padding interno do botão */
+    border-radius: 20px;
+    padding: 10px 15px;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s; /* Suaviza a transição */
+    transition: transform 0.3s, background-color 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .buttonSearch:hover {
     transform: scale(1.1);
-    background-color: #02493e; /* Cor de fundo ao passar o mouse */
+    background-color: #02493e;
 }
 
 .main {
@@ -81,22 +85,22 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #FFF;
-    width: 400px; /* Largura ajustada */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 20px; /* Padding para o conteúdo */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .main h2 {
     margin: 18px 0;
-    font-size: 28px; /* Tamanho da fonte ajustado */
-    color: #1d7965; /* Cor do título */
+    font-size: 28px;
+    color: #1d7965;
 }
 
 .main span {
     margin-bottom: 12px;
     font-weight: bold;
-    color: #555; /* Cor do texto */
+    color: #555;
 }
 
 @media (max-width: 630px) {
