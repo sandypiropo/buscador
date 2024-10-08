@@ -1,10 +1,10 @@
-![Screenshot_2](https://github.com/sandypiropo/buscador/assets/121200148/180d0724-e52f-4de8-8135-72faf1fc51e7)
+![image](https://github.com/user-attachments/assets/447d918c-d8c4-487b-bb3d-95df8cafbb44)
 
+# You can access the project by [here](https://buscadorapicep.netlify.app/).
+![image](https://github.com/user-attachments/assets/523cb588-2c80-4269-8dbd-ec76be1839ce)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-![Screenshot_3](https://github.com/sandypiropo/buscador/assets/121200148/358c8257-e3ea-4659-8f52-feb6bfdbdb58)
 
 ## Available Scripts
 
