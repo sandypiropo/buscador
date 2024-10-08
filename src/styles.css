@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Utilize uma fonte moderna */
+}
 
 .container {
     height: 100vh;
@@ -5,13 +9,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#02493e, #1d7965);
+    background: linear-gradient(135deg, #02493e, #1d7965);
 }
 
 .title {
     font-size: 85px;
     color: white;
     animation: animationTitle 2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
 } 
 
 @keyframes animationTitle {
@@ -23,39 +28,51 @@
 }
 
 .containerInput {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9); /* Mais opaco para melhor contraste */
     padding: 15px;
-    margin: 34px;
+    margin: 20px 0; /* Diminui a margem */
     display: flex;
-    border-radius: 8px;
-    box-shadow: 1px, 3px, 8px rgba(255, 255, 255, 0.5);
+    border-radius: 25px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.containerInput input{
+.containerInput input {
     background-color: transparent;
-    border: 0;
+    border: 2px solid #1d7965; /* Adiciona uma borda */
     font-size: 20px;
-    color: #FFF;
+    color: #333; /* Muda a cor do texto */
     outline: none;
     margin-right: 8px;
+    padding: 10px 15px; /* Mais padding para conforto */
+    border-radius: 20px; /* Bordas arredondadas */
+    transition: border 0.3s; /* Transição suave na borda */
 }
 
 .containerInput input::placeholder {
-    color: #f1f1f1;
+    color: #aaa; /* Cor do placeholder mais suave */
+}
+
+.containerInput input:focus {
+    border-color: #02493e; /* Muda a cor da borda ao focar */
 }
 
 .buttonSearch {
-    background-color: transparent;
-    border: 0;
+    background-color: #1d7965; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Padding interno do botão */
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza a transição */
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: transform 0.5s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do botão */
 }
 
-.buttonSearch:hover{
-    transform: scale(1.2);
+.buttonSearch:hover {
+    transform: scale(1.1);
+    background-color: #02493e; /* Cor de fundo ao passar o mouse */
 }
 
 .main {
@@ -64,22 +81,26 @@
     align-items: center;
     flex-direction: column;
     background-color: #FFF;
-    width: 500px;
-    border-radius: 8px;
+    width: 400px; /* Largura ajustada */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Padding para o conteúdo */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.main h2{
+.main h2 {
     margin: 18px 0;
-    font-size: 30px;
+    font-size: 28px; /* Tamanho da fonte ajustado */
+    color: #1d7965; /* Cor do título */
 }
 
-.main span{
-    margin-bottom: 16px;
+.main span {
+    margin-bottom: 12px;
     font-weight: bold;
+    color: #555; /* Cor do texto */
 }
 
 @media (max-width: 630px) {
-    .title{
+    .title {
         font-size: 48px;
     }
 
@@ -87,7 +108,7 @@
         font-size: 25px;
     }
 
-    .main{
+    .main {
         width: 80%;
         min-height: 225px;
     }
